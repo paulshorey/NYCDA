@@ -1,0 +1,149 @@
+/* 
+	styles
+*/
+body {
+	background-color: #999;
+	background-image: url('images/bryce_canyon.jpg');
+	background-size: 200% 100%;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+
+	margin:0;
+	font-family: sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin:0;
+}
+
+
+/* 
+	layout
+*/
+.a_section {
+	background: rgba(255,255,255, 0.5);
+	margin:10px 10px 50px 10px;
+	padding:10px;
+	border: dashed 2px lightblue;
+}
+.a_section p {
+	font-size:10px;
+}
+.a_section > p {
+	font-size:20px;
+}
+
+
+/*
+	specificity
+*/
+.a_section#the_classroom {
+	background: yellow;
+}
+#the_classroom {
+	background:red;
+}
+#the_classroom {
+	background:grey !important;
+}
+
+
+/*
+	display rules
+*/
+.display__table {
+	display:table;
+	width:100%;
+}
+.display__table-row {
+	display:table-row;
+}
+.display__table-cell {
+	display:table-cell;
+	border:solid 2px #999;
+}
+.display__flex {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+
+
+/* 
+	the classroom
+*/
+#the_classroom {
+	background:white;
+	text-align:center;
+}
+#the_classroom > p {
+	background:blue;
+	margin:0;
+	padding:0;
+	color:white;
+}
+#the_classroom > p.a_rad_student {
+	background:red;
+	color:white;
+}
+#the_classroom > p#name_brennon {
+	background:green;
+	color:white;
+	font-family:"Comic Sans MS", "Comic Sans", sans-serif;
+}
+#the_classroom > p.disabled {
+	background:#666;
+	color:#efefef;
+	opacity:0.66;
+}
+
+/*
+	the images
+*/
+#the_images {
+	position:relative;
+}
+.an_image {
+	width: 60px;
+}
+#the_supermoon {
+	position:fixed;
+	top:10px;
+	right:10px;
+}
+
+/*
+	box model experiment
+*/
+.a_box {
+	background:#000;
+	overflow:hidden;
+	zoom:1;
+	border:solid 4px #fff;
+	margin:10px;
+	padding:10px;
+	color:#fff;
+	width:90%;
+}
+.a_box div {
+	height:200px;
+	width:100%;
+	background:#fff;
+	color:#333;
+}
+
+
+/*
+	media query
+*/
+#the_supermoon {
+	display:block;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+}
+@media (max-width: 600px) {
+  #the_supermoon {
+    width: calc(100% - 20px);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
