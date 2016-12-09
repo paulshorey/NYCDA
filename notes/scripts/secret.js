@@ -8,14 +8,14 @@ for (var n in notes) {
 	var name = notes[n];
 
 	// 1. add placeholders
-	$( "#notes_keys" ).append( "<li note=\"#"+name+"\">Tab 1</li>" );
+	$( "#notes_keys" ).append( "<li note=\""+name+"\">Tab 1</li>" );
 	$( "#notes_values" ).append( "<div id=\""+name+"\">" );
 
 	// 2. add content into each placeholder
 	$.get( ""+name+".md", function( text ) {
 		console.log('text',text);
 		console.log('converter.makeHtml(text)',converter.makeHtml(text));
-		$( "#notes_value_"+name ).html( "<p>"+text+"</p>" );
+		$( "#notes_values > #"+name ).html( converter.makeHtml(text) );
 	});
 
 }
@@ -30,6 +30,6 @@ $("#notes_keys > * ").click(function(event) {
 	$(this).siblings().removeClass("current");
 
 	$("#notes_values > * ").not(tab).css("display", "none");
-	$("#notes_values > "+tab).fadeIn();
+	$("#notes_values > #"+tab).fadeIn();
 
 });
