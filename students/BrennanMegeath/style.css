@@ -1,0 +1,65 @@
+html {
+	height:100%;
+	background:#666 url(owslasepia.jpg);
+	background-size: cover;
+	color:rgb(200,220,255);
+	
+}
+body {
+	height:15%;
+	background-color:rgba(0,0,0,0.75);
+	color:darkorange;
+	text-shadow:2px 2px gray;	
+}
+
+.section_header {
+	position:left;
+	top:10%;
+	right:10px;
+
+	font-size:25px;
+	font-family: Impact;
+	color:darkorange;
+	text-shadow: 2px 2px black;
+	
+	border-top: solid 30px rgba(0,0,0,0.5);
+}
+
+.section_card {
+	position:center;
+	top:5%;
+	left:10px;
+	font-size:50px;
+	font-family: Impact;
+}
+.link_main {
+	display:flex;
+	position:absolute;
+	bottom:30px;
+	width:100%;
+	
+
+}
+.link_main a {
+	flex-grow: 1;
+
+}
+
+.link_main img {
+	border:double;
+	height:50px;
+	width: 50px;
+	border-radius: 5px;
+	
+}
+li {
+	display:block;
+
+
+}
+
+h1, h2 {
+	background-color:rgba(0,0,0,0.50);
+}
+
+
