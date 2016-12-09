@@ -1,11 +1,35 @@
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script>
-var notes = {"git":"", "javascript_links":"","terminal":"","terminal_vim":""};
-for (var n in notes) {
-	$.get( "/notes/"+n+".md", function( data ) {
-		console.log(n,data);
-		notes[n] = data;
-		$( "body" ).append( data );
-	});
-}
-</script>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Development Intensive</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.5.1/showdown.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="scripts/secret.js"></script>
+</head>
+<body>
+	<div id="notes">
+		<ul id="notes_keys">
+		</ul>
+		<div id="notes_values">
+		</div>
+	</div>
+	<style>
+	body {
+		background:#efefef;
+	}
+	#notes_keys li {
+		margin:15px;
+		padding:15px;
+		border:solid 2px #666;
+		background:#ccc;
+		color:#111;
+	}
+	#notes_values div {
+		margin:15px;
+		padding:15px;
+		border:solid 2px #999;
+		background:#fff;
+	}
+	</style>
+</body>
+</html>
