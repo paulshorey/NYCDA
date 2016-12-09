@@ -1,7 +1,7 @@
 GIT
 ---
 
-download repository url into this folder:
+download repository url into this folder:  
 
 	git clone https://github.com/paulshorey/NYCDA.git group_projects
   
@@ -9,7 +9,7 @@ before you make any changes, and after, download new changes from github:
 	
 	git pull
   
-add everything in the current folder  
+**add everything in the current folder** (commit these later) 
 	
 	git add .
 	
@@ -21,11 +21,11 @@ undo “git add filename"
 
 	git reset filename
   
-save the files which you just added, with a descriptive message  
+**save the files which you just added, with a descriptive message** (to your local computer)  
 	
 	git commit -m “this is my new folder”
 	
-uploads your saved files to github  
+**uploads your saved files to github** (the things which you just comitted (saved) to your local computer)  
 	
 	git push
 
