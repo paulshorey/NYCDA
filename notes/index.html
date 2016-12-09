@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Development Intensive</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.5.1/showdown.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="scripts/secret.js" defer='defer'></script>
+	<link rel="stylesheet" type="text/css" href="scripts/style.css" />
+</head>
+<body>
+	<div id="notes">
+		<ul id="notes_keys">
+		</ul>
+		<div id="notes_values">
+		</div>
+	</div>
+	<style>
+	body {
+		background:#efefef;
+		font-family:sans-serif;
+	}
+	#notes_keys {
+		text-align:center;
+	}
+	#notes_keys li {
+		display:inline-block;
+		margin:15px;
+		padding:15px;
+		border:solid 2px #999;
+		background:#ccc;
+		color:#111;
+		font-weight:bold;
+		text-transform:uppercase;
+		cursor:pointer;
+	}
+	#notes_keys li.current {
+		background:lightyellow;
+		border:solid 2px orange;
+		color:darkorange;
+	}
+	#notes_values div {
+		display:none;
+		margin:15px;
+		padding:30px 30px 60px;
+		border:solid 2px #999;
+		background:#fff;
+	}
+	#notes_values div.current {
+		display:block;
+	}
+	h1,h2,h3,h4,h5 {
+		color:darkorange;
+		font-family:sans-serif;
+		margin:45px 0;
+	}
+	hr {
+		margin:45px 0;
+	}
+	pre {
+		margin-left:15px;
+		padding:10px;
+	}
+	</style>
+</body>
+</html>

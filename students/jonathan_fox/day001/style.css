@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body {
+	background-color: yellow;
+}
+
+h1 {
+	font-family: sans-serif;
+	color: blue;
+}
+
+.a_box {
+	height: 100vh;
+	background: ;
+	overflow: hidden;
+	zoom: 1;
+	border: solid 1px #fff;
+	margin: 10px;
+	padding: 10px;
+}
+
+#island {
+	width: 300px;
+	height: 200px;
+}
+
+#hex {
+	height: 100px;
+	width: 200px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.an_image {
+	height: 60px;
+}
+
+.a_section {
+	padding: 50px;
+	margin: 10px 10px 50px 10px;
+	border: 2px dashed lightblue;
+}
+
+.a_section p {
+	/*all inside the class*/
+	font-size: 10px;
+}
+
+.table {
+	display: table;
+	width: 100%;
+}
+
+.table_row {
+	display: table-row;
+}
+
+.table_cell {
+	display: table-cell;
+	border: 2px solid #999;
+}
+
+.a_section > p {
+	/*only the first generation*/
+	font-size: 20px;
+}
+
+#second_section{
+	background:white;
+}
+
+#the_classroom {
+	background:	white;
+	text-align: center;
+}
+
+#the_classroom > p {
+	padding: 15px;
+	margin: 5px;
+	border: 2px solid orange;
+	display: inline-block;
+}
+
+#the_classroom > .a_rad_student {
+	background: red;
+	color: white;
+}
+
+#the_classroom > #name_brennan {
+	color: green;
+	font-family: "comic Sans MS", "comic sans", sans-serif;
+}
+
+/*display: flex;*/
+#flex_the_classroom {
+	background:	white;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+#flex_the_classroom > p {
+	padding: 15px;
+	margin: 5px;
+	border: 2px solid orange;
+}
+
+#flex_the_classroom > .a_rad_student {
+	background: red;
+	color: white;
+}
+
+#flex_the_classroom > #name_brennan {
+	color: green;
+	font-family: "comic Sans MS", "comic sans", sans-serif;
+}
