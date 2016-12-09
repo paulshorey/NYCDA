@@ -8,7 +8,7 @@ for (var n in notes) {
 	var name = notes[n];
 
 	// 1. add placeholders
-	$( "#notes_keys" ).append( "<li note=\""+name+"\">Tab 1</li>" );
+	$( "#notes_keys" ).append( "<li note=\""+name+"\">"+name+"</li>" );
 	$( "#notes_values" ).append( "<div id=\""+name+"\">" );
 
 	// 2. add content into each placeholder
