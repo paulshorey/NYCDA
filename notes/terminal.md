@@ -11,7 +11,7 @@ Terminal:
 
 change directory:
 	
-    cd
+	cd
     
 list the files in current directory:
 
@@ -23,7 +23,7 @@ list the files in this whatever directory:
     
 where exactly am I?  
 	
-    pwd
+	pwd
   
 ---
   
@@ -31,23 +31,23 @@ where exactly am I?
   
 create new empty file:
 	
-    open filename.tx
+	open filename
 
 open folder or file:
 
-    mkdir foldername
+	mkdir foldername
     
 make a new folder:
 
-    mkdir foldername
+	mkdir foldername
 	
 delete an empty folder or file:
 
-    rm filename
+	rm filename
     
 delete a folder and everything inside it:  
 
-    rm -rf foldername
+	rm -rf foldername
     
 ---
     
@@ -55,5 +55,5 @@ delete a folder and everything inside it:
 
 add backslash before the space, to tell terminal that it is a character, and not a programmatic separator
 
-    /Sublime\ Text.app
+	/Sublime\ Text.app
 
