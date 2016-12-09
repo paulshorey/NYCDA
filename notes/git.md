@@ -9,7 +9,7 @@ before you make any changes, and after, download new changes from github:
 	
 	git pull
   
-**add everything in the current folder** (commit these later) 
+(1) **add everything in the current folder** (commit these later) 
 	
 	git add .
 	
@@ -21,11 +21,11 @@ undo “git add filename"
 
 	git reset filename
   
-**save the files which you just added, with a descriptive message** (to your local computer)  
+(2) **save the files which you just added, with a descriptive message** (to your local computer)  
 	
 	git commit -m “this is my new folder”
 	
-**uploads your saved files to github** (the things which you just comitted (saved) to your local computer)  
+(3) **uploads your saved files to github** (the things which you just comitted (saved) to your local computer)  
 	
 	git push
 
