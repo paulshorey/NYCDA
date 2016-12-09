@@ -1,0 +1,299 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.background_header {
+	/*background-image: url("../images/computer2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+	border: 1px solid black;*/
+}
+
+.background_image {
+	width: 100%;
+	height: auto;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+#header_fixed {
+	position: fixed;
+	width: 75%;
+	z-index: 1;
+}
+
+.nav_box {
+	width: 75%;
+	text-align: center;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	margin-top: 40px;
+}
+
+#personal_logo {
+	height: 100px;
+	width: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 10px 10px 10px 20px;
+	display: inline-block;
+	opacity: 0.8;
+}
+
+#my_name {
+	font-family: Raleway;
+	letter-spacing: 2px;
+	display: inline-block;
+	margin: 0;
+	width: 35%;
+	line-height: 57px;
+	padding-left: 14%;
+}
+
+.navigation {
+	display: inline-block;
+	width: 50%;
+	white-space: nowrap;
+}
+
+.mobile_menu {
+	display: none;
+	width: 50px;
+	height: auto;
+}
+
+.navigation li {
+	display: inline-block;
+	margin: 10px 10px;
+	height: 37px;
+	line-height: 37px;
+	padding: 0;
+}
+
+.header_content_right #full {
+	text-align: left;
+	font-size: 20px;
+	padding: 20px;
+	width: 60%;
+	position: absolute;
+	right: 0;
+	top: 250px;
+	background-color: rgba(72, 46, 49, .7);
+	color: white;
+}
+
+.header_content_right #px {
+	display: none;
+}
+
+.logo {
+	width: 20px;
+	height: auto;
+	opacity: .8;
+}
+
+footer {
+	width: 100%;
+	height: auto;
+	position: fixed;
+	bottom: 0px;
+	text-align: center;
+}
+
+.footer {
+	display: inline-block;
+	background-color: rgba(248, 248, 248, .07);
+	border-top: 2px solid black;
+}
+
+.space {
+	display: block;
+	height: 200px;
+}
+
+section {
+	text-align: center;
+}
+
+section h2 {
+	position: absolute;
+	left: 30px;
+	bottom: 50px;
+	text-align: left;
+	vertical-align: middle;
+	display: inline-block;
+	z-index: 1;
+}
+
+section ul {
+	position: absolute;
+
+	display: inline-block;
+}
+
+.images {
+	display: inline-block;
+	width: 40%;
+	height: auto;
+	margin: 30px;
+	vertical-align: middle;
+	border: 1px solid black;
+}
+/*
+.next_to_image_text {
+	display: inline-block;
+	width: 40%;
+	height: auto;
+	margin: 30px;
+	vertical-align: middle;
+	z-index: 1;
+}
+
+.next_to_image_text h2 {
+	display: inline-block;
+	width: 60%;
+	background-color: rgba(72, 46, 49, .5);
+}
+
+.next_to_image_text li {
+	list-style: none;
+	display: inline-block;
+}*/
+
+/*@media (max-width: 700px){
+	#header_fixed {
+		width: 100%;
+	}
+	.nav_box {
+		width: 100%;
+		text-align: center;
+		background-color: rgba(0,0,0,0.6);
+		color: white;
+		margin-top: 40px;
+	}
+	#my_name {
+		display: block;
+		margin: 0;
+		width: 100%;
+		line-height: 57px;
+		padding-left: 0;
+	}
+	.navigation {
+		display: block;
+		width: 100%;
+		white-space: nowrap;
+	}	
+}*/
+
+@media (max-width: 700px){
+	.background_header {
+		background-image: url(../images/computer2.jpg);
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    border: 1px solid black;
+	    height: 280px;
+	}
+	#header_fixed {
+		width: 100%;
+		min-width: 410px;
+	}
+	.nav_box {
+		width: 100%;
+		text-align: left;
+		background-color: rgba(0,0,0,0.6);
+		color: white;
+		margin-top: 40px;
+		position: relative;
+	}
+	#my_name {
+		display: inline;
+		margin: 0;
+		width: 100%;
+		line-height: 57px;
+		padding-left: 110px;
+	}
+	.navigation {
+		display: none;
+		width: 100%;
+		white-space: nowrap;
+		text-align: center;
+	}	
+	.mobile_menu {
+		display: block;
+		height: 29px;
+		width: auto;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		bottom: 0px;
+		padding: 14px;
+	}	
+	.drop_down {
+		text-align: center;
+	}
+	.drop_down ul {
+		display: none;
+	}
+/*	.drop_down:hover ul {
+		display: inline-block;
+	}
+	.drop_down ul li {
+		display: inline-block;
+		margin: 10px;
+	}
+*/
+	.nav_box.clicked .navigation {
+		display:block;
+		min-width: 410px;
+	}
+	.header_content_right #full {
+		display: none;
+	}
+	.header_content_right #px {
+		display: block;
+		width: 100%;
+		min-width: 410px;
+		height: 30px;
+		padding: 8px 0px;
+		text-align: center;
+		font-size: 20px;
+		background-color: rgba(72, 46, 49, .7);
+		color: white;
+	}
+	.images {
+		width: 100%;
+		height: auto;
+		margin: 0;
+		opacity: .5;
+	}
+	.next_to_image_text {
+		position: absolute;
+
+	}
+}
+
+@media (min-width: 700px){
+	.nav_box, #header_fixed{
+		min-width: 700px;
+	}
+}
+@media (min-width: 700px){
+	.drop_down {
+		display: none;
+	}
+}
+
+.cream_background {
+	background-color: rgba(228, 212, 212, .7);
+}
+
+.cool_background {
+	background-color: rgba(180, 190, 202, .7);
+}
