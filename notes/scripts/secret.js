@@ -15,8 +15,8 @@ for (var n in notes) {
 	$.get( ""+name+".md", function( text ) {
 		console.log('text',text);
 		console.log('converter.makeHtml(text)',converter.makeHtml(text));
-		$( "#notes_values > #"+name ).html( converter.makeHtml(text) );
-	});
+		$( "#notes_values > #"+this ).html( converter.makeHtml(text) );
+	}.bind(name));
 
 }
 
