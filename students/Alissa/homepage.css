@@ -1,0 +1,154 @@
+/* reset
+*/
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-size: 14pt; 
+}
+
+body {
+	background-color: gainsboro;
+}
+
+header {
+  margin: 0;
+  display: flex;
+  background: whitesmoke;
+  padding: 15px;
+}
+
+.header_image {
+  height: 75px;
+  border: 3px solid firebrick;
+  border-radius: 6px; 
+}
+
+.header_text {
+  background: whitesmoke;
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+
+header h1{
+  font-size: 18pt;
+  padding-top: 7px;
+  font-family: Droid Sans; 
+  
+}
+header p {
+  padding-top: 20px;
+  font-size: 10pt;
+  font-family: Arvo;
+}
+
+nav ul {
+  padding: 0px;
+  margin: 0px;
+  background: whitesmoke;
+ 
+}
+
+nav ul li {
+  display: inline-block;
+ 
+}
+
+nav ul li a {
+  display: inline-block; 
+  padding: 10px;
+  background: azure;
+  border: 3px solid firebrick;
+  border-radius: 6px; 
+  font-family: arial black, Arvo;  
+  margin-top: 15px; 
+  margin-right: 15px;
+  padding: 10px;
+  color: black;
+}
+
+nav ul li a:hover {
+  background: azure;
+  color: firebrick; 
+  border: none;
+}
+
+.aboutMe {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: azure;
+	
+	margin: 20px auto;
+	width:80vw;
+	height: 300px;
+	text-align: center;
+
+}
+.aboutMe p, img {
+  display: flex;
+	margin: 5vw;
+  color: slategray;
+  font-family: Arvo;
+  font-size: 32pt;
+}
+
+/*
+.aboutMe img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px auto;
+
+}
+*/
+.footerImages {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	align-content: space-around;
+	margin: auto;
+	width:80vw;
+	height: max-content;
+
+}
+
+.footerImages img {
+	margin: 5vw;
+	max-height: 300px;
+	width:30vw;
+	display: inline-block;
+  border: 5vw solid azure;
+}
+
+
+
+
+
+/* Media Queries*/
+
+@media (max-width: 900px){
+  header {
+    display: block;
+    text-align: center;
+ /*}
+  header img, 
+  header div, 
+  header nav {
+    display: block;
+    text-align: center;*/
+  }
+}
+
+@media (max-width: 450px){
+  nav ul li {
+    display: block;
+  }
+}
+
+/* interactions
+*/
+.watermelon {
+  color: #ef4845;
+  font
+}
