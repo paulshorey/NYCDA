@@ -1,10 +1,12 @@
 GIT
 ---
 
-download repository url into this folder:  
+**download repository url into this folder:**  
 
 	git clone https://github.com/paulshorey/NYCDA.git group_projects
-  
+
+---
+
 before you make any changes, and after, download new changes from github:  
 	
 	git pull
