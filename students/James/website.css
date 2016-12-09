@@ -11,9 +11,27 @@ p {
 }
 
 html {
+	background-color: lightblue;
+	/*background-image: url("website-pics/waterfall.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;*/
+
+}
+body {
+	padding: 10px;
+	padding-bottom: 80px;
+	/*background-image: url("website-pics/whitestripe.jpeg");
+	background-size: ;
+	background-repeat: no-repeat;
+	background-attachment: ;
+	background-position: 30% 20%;*/
+}
+.top_background {
 	background-image: url("website-pics/waterfall.jpg");
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: ;
+	padding: 0px 0px 0px 0px;
 
 }
 div {
@@ -25,15 +43,7 @@ header {
 	background-size: 100%;
 	background-position: relative;
 }
-body {
-	padding: 10px;
-	padding-bottom: 80px;
-	/*background-image: url("website-pics/whitestripe.jpeg");
-	background-size: ;
-	background-repeat: no-repeat;
-	background-attachment: ;
-	background-position: 30% 20%;*/
-}
+
 
 .logo_words {
 }
@@ -97,6 +107,7 @@ nav ul li a:hover {
 .navside ul li {
 	display: inline-block;
 	width: 100px;
+	margin-right: 0;
 }
 .navside ul li ul {
 	display: none;
