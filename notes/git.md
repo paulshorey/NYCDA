@@ -1,22 +1,65 @@
 GIT
 ---
 
-**git clone https://github.com/paulshorey/NYCDA.git group_projects**  
-download this repository url into this folder name  
-  
-**git pull**  
-	before you make any changes, and after, download new changes from github!  
-  
-**git add .**  
-	add everything in the current folder  
-**git add Alissa**  
-	add only this specific file or folder  
-**git reset filename**  
-	undo “git add filename"  
-  
-**git pull**  
-**git commit -m “this is my new folder”**  
-	save the files which you just added, with a descriptive message  
-**git push**  
-	uploads your saved files to github  
+download repository url into this folder:
 
+	git clone https://github.com/paulshorey/NYCDA.git group_projects
+  
+before you make any changes, and after, download new changes from github:  
+	
+	git pull
+  
+add everything in the current folder  
+	
+	git add .
+	
+add only this specific file or folder  
+
+	git add Alissa  
+	
+undo “git add filename"  
+
+	git reset filename
+  
+save the files which you just added, with a descriptive message  
+	
+	git commit -m “this is my new folder”
+	
+uploads your saved files to github  
+	
+	git push
+
+---
+
+super-“undo” undoes everything you have on your computer and gets the latest version from github.com:
+	
+	git reset --hard origin/master
+	...or...
+	git reset --hard origin/YOUR_BRANCH_NAME
+	
+---
+
+**delete the branch on MY COMPUTER:**  
+(make sure youre not inside that branch - git checkout master - first)
+	
+	git branch -D branchname
+	
+
+**delete the branch on THE SERVER - GITHUB OR WHATEVER**  
+(make sure youre not inside that branch - git checkout master - first)
+
+	git push origin :branchname
+
+---
+
+what branches are there on MY COMPUTER?
+	
+	git branch
+	
+what branches are there on THE SERVER - GITHUB	
+	
+	git branch -r
+	
+	
+	
+	
