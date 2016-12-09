@@ -13,7 +13,9 @@ for (var n in notes) {
 
 	// 2. add content into each placeholder
 	$.get( ""+name+".md", function( text ) {
-		$( "#notes_value_"+name ).html( converter.makeHtml(text) );
+		console.log('text',text);
+		console.log('converter.makeHtml(text)',converter.makeHtml(text));
+		$( "#notes_value_"+name ).html( "<p>"+text+"</p>" );
 	});
 
 }
