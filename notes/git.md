@@ -11,7 +11,8 @@ before you make any changes, and after, download new changes from github:
 	
 	git pull
   
-(1) **add everything in the current folder** (commit these later) 
+(1)  
+**add everything in the current folder** (commit these later) 
 	
 	git add .
 	
@@ -23,21 +24,49 @@ undo “git add filename"
 
 	git reset filename
   
-(2) **save the files which you just added, with a descriptive message** (to your local computer)  
+(2)  
+**save the files which you just added, with a descriptive message** (to your local computer)  
 	
 	git commit -m “this is my new folder”
 	
-(3) **uploads your saved files to github** (the things which you just comitted (saved) to your local computer)  
+(3)  
+**uploads your saved files to github** (the things which you just comitted (saved) to your local computer)  
 	
 	git push
 
 ---
 
-super-“undo” undoes everything you have on your computer and gets the latest version from github.com:
+super-“undo”
+---
+undoes everything you have on your computer and gets the latest version from github.com:
 	
 	git reset --hard origin/master
 	...or...
 	git reset --hard origin/YOUR_BRANCH_NAME
+	
+---
+
+Branches
+---
+
+switch to a branch
+	
+	git checkout master
+	...or...
+	git checkout YOUR_BRANCH_NAME
+	
+switch to a NEW branch 
+	
+	git checkout -b new_branch_name
+	
+what branches are there on MY COMPUTER?
+	
+	git branch
+	
+what branches are there on THE SERVER - GITHUB	
+	
+	git branch -r
+	
 	
 ---
 
@@ -52,16 +81,6 @@ super-“undo” undoes everything you have on your computer and gets the latest
 
 	git push origin :branchname
 
----
-
-what branches are there on MY COMPUTER?
-	
-	git branch
-	
-what branches are there on THE SERVER - GITHUB	
-	
-	git branch -r
-	
 	
 	
 	
