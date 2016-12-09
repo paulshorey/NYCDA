@@ -1,0 +1,11 @@
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>
+var notes = {"git":"", "javascript_links":"","terminal":"","terminal_vim":""};
+for (var n in notes) {
+	$.get( "/notes/"+n+".md", function( data ) {
+		console.log(n,data);
+		notes[n] = data;
+		$( "body" ).append( data );
+	});
+}
+</script>

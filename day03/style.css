@@ -1,0 +1,157 @@
+/*
+  reset
+*/
+body {
+  margin:0;
+}
+h1,h2,h3,h4,h5,h6,p {
+  margin:0;
+  font-size:14px;
+  font-weight:normal;
+}
+
+
+/*
+header layout
+*/
+article {
+  margin-top:60px;
+}
+header {
+  position:fixed;
+  width:70%;
+  top:0;
+  right:0;
+  background: #111;
+  padding: 8px;
+  display:flex;
+  height:60px;
+}
+header .top_image {
+  border:solid 3px #cc7700;
+  border-radius:3px;
+}
+header .top_text {
+  flex-grow:1;
+  color:#cc7700;
+  font-family:"Courier New", Courier, serif;
+}
+header .top_nav {
+}
+
+
+/*
+header nav
+*/
+nav {
+}
+nav ul {
+  padding:0;
+  margin:0;
+}
+nav ul li {
+  display:inline-block;
+}
+nav ul li a {
+  display:inline-block;
+  padding:10px;
+  background:#666666;
+  border:solid 3px #444444;
+  border-radius:3px;
+  color:#111111;
+  text-decoration:none;
+  font-family: arial black, sans-serif;
+  margin: 1px 10px;
+  cursor: pointer;
+}
+nav ul li a:hover {
+  background:lightyellow;
+  border-color:yellow;
+  color:darkorange;
+}
+
+
+
+/*
+  header styles
+*/
+header img {
+  height:50px;
+}
+header h1 {
+  font-size:20px;
+  font-weight:bold;
+  padding:3px 12px 2px 12px;
+}
+header p {
+  padding:2px 12px;
+}
+
+/*
+  page content
+*/
+.content_box {
+  height:100px;
+  border:solid 5px lightblue;
+  margin:10px;
+}
+
+/* for tablet */
+@media (max-width:850px){
+  header {
+    display: block;
+    text-align: center;
+  }
+  nav {
+    margin:5px 0 2px;
+  }
+}
+
+/* for phone */
+@media (max-width: 450px){
+  nav ul li {
+    display:block;
+  }
+}
+
+
+/* happy trees for tablet */
+@media (max-width:850px){
+  .happy_trees {
+    position:absolute;
+    top:50px;
+    right:50px;
+    color:lightgreen;
+    font-family:"Arial Black";
+  }
+  .happy_trees > span {
+    display:block;
+    transform:rotate(90deg);
+    font-size:60px;
+    line-height:30px;
+  }
+  .happy_trees > span.top {
+    font-size:40px;
+    line-height:20px
+  }
+  .happy_trees > span.bot {
+    font-size:90px;
+  }
+  .happy_trees span.trunk {
+    position:absolute;
+    top:90px;
+    left:27px;
+    color:#cc7700;
+    transform:rotate(0deg);
+  }
+}
+
+
+/*
+  interactions
+*/
+.green {
+  background:lightgreen;
+  border-color:green;
+  color:darkgreen;
+}
