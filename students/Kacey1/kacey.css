@@ -1,0 +1,40 @@
+body{ display:inline-block;
+  background:black;
+  border:solid 10px;
+  text-align:center;
+}
+header > {
+  display:inline-block;
+  vertical-align:middle;
+}
+.header_image img{ 
+  margin:0px;border:solid 10px #f44262;}
+h1 {font-family:impact;font-size:20px;padding-bottom:20px; padding-top:20px;border-radius:20px; 
+}
+.social_links li{
+  display:block; margin:5px;}
+.photos li img {display:inline-block; padding-right:30px;
+}
+.aboutme {border:solid #f44262; text-align:center;font-size:30px;background-color:grey;
+justify-content:flex-end;
+align-items:center;}
+.aboutme:hover{background-color:#42f49e;}
+
+a.header_text {}
+.header_image{}
+header p {font-family:impact;padding-bottom:10px}
+nav ul{padding:0px;margin:30px;}
+nav ul li{ display:inline-block;}
+a{background-color:#f44262; padding:15px 40px; font-size:20px; font-family:impact; border-radius:10px;}
+a:hover{background-color:#42f49e;font-size:25px;padding:20px; border:solid; border-color:#f44262;font:#f44262;}
+a.bear_link{background-color:#f44262;}
+a.bear_link:hover{background-color:#42f49e;}
+@media (max-width:800px){nav ul li{ display:block;}
+  .header_nav {text-align:center;}
+  nav a{display:block;}
+}
+.blue{
+  border:solid 10px blue;background:blue;
+}
+
+        
