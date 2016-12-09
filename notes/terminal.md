@@ -8,14 +8,14 @@ Terminal:
 ---
   
 **Navigate, move around in the terminal:**  
-
-**cd**
-	change directory
-**ls**
-	list the files in current directory
-**ls /User/admin/Documents**
-	list the files in this whatever directory
-**pwd**
+  
+**cd**  
+	change directory  
+**ls**  
+	list the files in current directory  
+**ls /User/admin/Documents**  
+	list the files in this whatever directory  
+**pwd**  
 	where exactly am I?  
   
 ---
