@@ -29,7 +29,7 @@ $("#notes_keys > * ").click(function(event) {
 	$(this).addClass("current");
 	$(this).siblings().removeClass("current");
 
-	$("#notes_values > * ").not(tab).css("display", "none");
-	$("#notes_values > #"+tab).fadeIn();
+	$("#notes_values > * ").not(tab).removeClass("current");
+	$("#notes_values > #"+tab).addClass("current");
 
 });

@@ -5,6 +5,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.5.1/showdown.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="scripts/secret.js" defer='defer'></script>
+	<link rel="stylesheet" type="text/css" href="scripts/style.css" />
 </head>
 <body>
 	<div id="notes">
@@ -16,6 +17,7 @@
 	<style>
 	body {
 		background:#efefef;
+		font-family:sans-serif;
 	}
 	#notes_keys {
 		text-align:center;
@@ -27,12 +29,25 @@
 		border:solid 2px #666;
 		background:#ccc;
 		color:#111;
+		text-transform:uppercase;
+	}
+	#notes_keys li.current {
+		background:lightyellow;
+		border:orange;
+		color:darkorange;
 	}
 	#notes_values div {
+		display:none;
 		margin:15px;
 		padding:15px;
 		border:solid 2px #999;
 		background:#fff;
+	}
+	#notes_values div.current {
+		display:block;
+	}
+	h1,h2,h3,h4,h5 {
+		color:darkorange;
 	}
 	</style>
 </body>
