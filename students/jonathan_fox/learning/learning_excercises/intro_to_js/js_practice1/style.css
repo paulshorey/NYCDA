@@ -1,0 +1,7 @@
+#content div {
+	display: none;
+}
+
+#content .clicked {
+	display: block;
+}
