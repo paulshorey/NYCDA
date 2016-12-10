@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>About me</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		
+		<!-- profile -->
+		<div class="profile">
+			<img src="images/1.jpg" />
+			<h5>Paul Shorey</h5>
+		</div>
+
+		<!-- buttons -->
+		<div class="navigation">
+			<button id="button_foods" onClick="show_foods(); hide_colors();">Favorite Foods</button> 
+			<button id="button_colors" onClick="show_colors(); hide_foods();">Favorite Colors</button>
+		</div>
+
+		<!-- content -->
+		<div class="about_me">
+			<div id="content_foods">
+			</div>
+			<div id="content_colors">
+			</div>
+		</div>
+
+		<!-- pro tip: put your script at the end of you body tag to avoid problems! -->
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
