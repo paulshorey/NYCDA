@@ -4,9 +4,11 @@
 	<head>
 		<title >James's Website</title>
 		<link rel="stylesheet" href="website.css">
-	</head>
+		<script src="website.js"></script>
+	</head>	
+	<div class="top_background"/>
 	<body>
-		<div class="top_background"/>
+
 		<header>
 
 			<img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Hypercube.svg/834px-Hypercube.svg.png" />
@@ -20,7 +22,7 @@
 				<li><a onClick="this.classList.toggle('green')"> Portfolio </a>
 					<ul>
 						<li><a href="#code_samples">where is this</a></li>
-						<li><a href="http://google.com">Does this show</a></li>
+						<li><a href="second_page.html">Does this show</a></li>
 					</ul>
 				</li>
 				<li><a onClick="this.classList.toggle('green')" href="#code_samples"> Github</a></li>
@@ -45,6 +47,7 @@
 			</ul>
 		</div>
 		<middle>
+			<div id="juice"></div>
 			<p>this text will be here</p>
 			<p>this text will be here</p>
 			<p>this text will be here</p>
@@ -91,7 +94,24 @@
 			<p>this text will be here</p>
 			<p>this text will be here</p>
 			<p>this text will be here</p>
+			<div onClick="change()" id="el">
 			<a name="code_samples">these are my samples</a>
+			</div>
+
+<input type="text" value="" id="num1"/> +
+<input type="text" value="" id="num2"/> =
+<input type="text" value="" id="equals"/>
+<br />
+<p>Please enter how you want it calculated bellow!</p>
+<br />
+<input type="text" value="" id="times"> =
+<br />
+
+<input type="text" value="" id="multiple">
+<button type="submit" onClick="add()">Submit</button>
+<br />
+<br />
+
 		</middle>
 
 	</body>
