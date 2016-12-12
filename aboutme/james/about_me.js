@@ -22,8 +22,8 @@ function hide_sports() {
 }
 
 for(var i in info_deserts) {
-	document.getElementById("info_deserts").innerHTML += info_deserts[i] + "<br />";
+	document.getElementById("info_deserts").innerHTML += info_deserts[i] + "<br />" + "<br />";
 }
 for(var i in info_sports) {
-	document.getElementById("info_sports").innerHTML += info_sports[i] + "<br />";
+	document.getElementById("info_sports").innerHTML += info_sports[i] + "<br />" + "<br />";
 }
