@@ -3,7 +3,7 @@ var converter = new showdown.Converter();
 /* 
 	loop through notes 
 */
-var notes = {"git":"git", "js vars":"javascript_vars", "js dom":"javascript_dom", "js query":"javascript_dom_queries", "js links":"javascript_links", "terminal":"terminal", "vim":"terminal_vim"};
+var notes = {"git":"git", "js vars":"javascript_vars", "js dom":"javascript_dom", "js query":"javascript_dom_query", "js links":"javascript_links", "terminal":"terminal", "vim":"terminal_vim"};
 for (var key in notes) {
 	var value = notes[key];
 

@@ -14,12 +14,12 @@ Before HTML5 and jQuery, it was very hard to select things with Javascript. Your
 
 Now there are many ways to select an element in the browser:
 
-	document.getElementsByTagName()
-	document.getElementsByClassName()
+    document.getElementsByTagName()
+    document.getElementsByClassName()
    
 But most importantly, you can now select stuff in Javascript using CSS Selectors:
 
-	document.querySelectorAll(".selected")
+    document.querySelectorAll(".selected")
     document.querySelector("div.about_me > div.selected")
     document.querySelector("[name=username]")
     
@@ -31,11 +31,13 @@ But its more than just "queries", because with HTML5 querySelector, you can very
 
 But first, this is how you would select something using jQuery:
 
-	$(".selected")
+    $(".selected")
     $("div.about_me > .selected")
     $("[name=username]")
     
 As you can see, there is no advantage to jQuery if all you need to do is access the DOM easily. You can already do that with HTML5
+
+
 
 
 
