@@ -1,1 +1,55 @@
-body{background:#d3d3d3;font-family:sans-serif}div.profile{margin:15px}div.profile img{height:300px}div.profile h5{margin:0;font-size:16px;line-height:20px}div.navigation button{margin:15px;border:2px solid grey;background:#d3d3d3;color:#000;cursor:pointer}div.navigation button.selected{border-color:orange;background:#ffffe0;color:#ff8c00}div.about_me>div{display:none;margin:15px;padding:15px;background:#ffffe0;color:#ff8c00;border:2px solid orange}div.about_me>div.selected{display:block;background:#fff}
+body {
+	background:lightgrey;
+	font-family:sans-serif;
+}
+
+/*
+	the profile info
+*/
+div.profile {
+	margin:15px;
+}
+div.profile img {
+	height:300px;
+}
+div.profile h5 {
+	margin:0;
+	font-size:16px;
+	line-height:20px;
+}
+
+
+/*
+	the buttons
+*/
+div.navigation {
+}
+div.navigation button {
+	margin:15px;
+	border:solid 2px grey;
+	background:lightgrey;
+	color:black;
+	cursor:pointer;
+}
+div.navigation button.selected {
+	border-color:orange;
+	background:lightyellow;
+	color:darkorange;
+}
+
+
+/*
+	the content
+*/
+div.about_me > div {
+	display:none;
+	margin:15px;
+	padding:15px;
+	background:lightyellow;
+	color:darkorange;
+	border:solid 2px orange;
+}
+div.about_me > div.selected {
+	display:block;
+	background:white;
+}
