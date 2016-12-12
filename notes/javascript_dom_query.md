@@ -1,6 +1,6 @@
 ## Javascript - DOM Query Selectors
 
-#### HTML4: getElementByID()  
+#### HTML3: getElementByID()  
 
 Before HTML5 and jQuery, it was very hard to select things with Javascript. Your options were to scale the hierarchy manually, or get it by ID:
 
@@ -10,7 +10,7 @@ Before HTML5 and jQuery, it was very hard to select things with Javascript. Your
 
 ----
     
-#### HTML5: much easier!
+#### HTML4: much easier!
 
 Now there are many ways to select an element in the browser:
 
@@ -24,10 +24,13 @@ But most importantly, you can now select stuff in Javascript using CSS Selectors
     document.querySelector("[name=username]")
     
 ---
+#### HTML5: also makes things much better, in other ways.
+
+---
 
 #### jQuery makes things even easier
 
-But its more than just "queries", because with HTML5 querySelector, you can very easily select things using CSS queries. JQuery opens up a whole world of useful functions, loops, and animations.
+But its more than just "queries", because with querySelector, you can very easily select things using CSS queries. JQuery opens up a whole world of useful functions, loops, and animations.
 
 But first, this is how you would select something using jQuery:
 
