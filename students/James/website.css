@@ -32,6 +32,8 @@ body {
 	background-repeat: no-repeat;
 	background-position: ;
 	padding: 0px 0px 0px 0px;
+	margin: 0;
+
 
 }
 div {
@@ -161,7 +163,7 @@ footer {
 	bottom: 0;
 	width: 100%;
 	height: 78px;
-	background: lightblue;
+	background: lightgrey;
 	opacity: 0.40;
 	text-align: center;
 	margin: 0;

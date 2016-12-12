@@ -1,0 +1,60 @@
+html {
+
+}
+head{
+
+}
+body {
+background-color: lightblue;
+}
+.pic_name {
+
+}
+h1 {
+	font-size: 15px;
+}
+.web_buttons >div {
+	background: yellow;
+}
+.web_buttons >div.selected {
+	display: inline-block;
+	background: lightyellow;
+	border: 2px solid grey;
+}
+button {
+	cursor: pointer;
+}
+button.selected {
+	background: yellow;
+}
+
+
+.info {
+	background: white;
+	border: 2px solid grey;
+	font-size: 14px;
+	margin: 10px;
+}
+.info >div {
+	display: none;
+}
+.info >div.selected{
+	display: block;
+	background: white;
+	border: 2px solid grey;
+}
+
+
+#info_deserts {
+	background: lightyellow;
+
+}
+
+#info_sports {
+	background: lightgreen;
+}
+
+
+
+
+
