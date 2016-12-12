@@ -3,20 +3,18 @@ var converter = new showdown.Converter();
 /* 
 	loop through notes 
 */
-var notes = ["git", "javascript_vars", "javascript_dom", "javascript_links", "terminal", "terminal_vim"];
-for (var n in notes) {
-	var name = notes[n];
+var notes = {"git":"git", "js vars":"javascript_vars", "js dom":"javascript_dom", "js query":"javascript_dom_queries", "js links":"javascript_links", "terminal":"terminal", "vim":"terminal_vim"};
+for (var key in notes) {
+	var value = notes[key];
 
 	// 1. add placeholders
-	$( "#notes_keys" ).append( "<li note=\""+name+"\">"+name+"</li>" );
-	$( "#notes_values" ).append( "<div id=\""+name+"\">" );
+	$( "#notes_keys" ).append( "<li note=\""+value+"\">"+key+"</li>" );
+	$( "#notes_values" ).append( "<div id=\""+value+"\">" );
 
 	// 2. add content into each placeholder
-	$.get( ""+name+".md", function( text ) {
-		console.log('text',text);
-		console.log('converter.makeHtml(text)',converter.makeHtml(text));
+	$.get( ""+value+".md", function( text ) {
 		$( "#notes_values > #"+this ).html( converter.makeHtml(text) );
-	}.bind(name));
+	}.bind(value));
 
 }
 
