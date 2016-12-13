@@ -1,0 +1,33 @@
+html {
+
+}
+
+body {
+
+}
+button {
+
+}
+button #button_1 {
+
+}
+button #button_2 {
+
+}
+p {
+
+}
+div {
+	display: none;
+}
+
+.paragraph_1 >div.selected {
+	display: inline-block;
+}
+.paragraph_2 >div.selected {
+	display: inline-block;
+}
+
+h1 {
+
+}
