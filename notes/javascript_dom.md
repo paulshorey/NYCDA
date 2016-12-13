@@ -30,6 +30,6 @@ This is inside your open window or tab:
 This is inside your JAVASCRIPT "window" variable:
 
 	// document.body
-    // document.body.children.form
-    // document.body.children.form.children.username
-    // document.body.children.form.login_form.children.username
+    // document.body
+    // document.body.children.login_form
+    // document.body.children.login_form.children.username
