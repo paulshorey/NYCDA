@@ -18,7 +18,7 @@ Then, you read over each list "item", one at a time like this:
     	console.log( foods[key] + " is a " + key );
     }
     
-Remember, the "key" variable above can be named anything you want to call it. But, it always represents the identifier of each "key:value" pair, or more simply, the "list item". If "apple" is the value, then "fruit" is the key. So, the very first time the loop is run, the "key" value will be "fruit".
+Remember, the "key" variable above can be named anything you want to call it. But, it always represents the identifier of each "key:value" pair, or more simply, the "list item". If "apple" is the value, then "fruit" is the key. So, the very first time the loop is run, the "key" will be "fruit".
 
 
 #### while() {}
