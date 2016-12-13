@@ -1,44 +1,39 @@
 ## Javascript - DOM Query Selectors
 
-#### HTML3: getElementByID()  
+#### Getting only ONE result
 
-Before HTML5 and jQuery, it was very hard to select things with Javascript. Your options were to scale the hierarchy manually, or get it by ID:
+Use one of these ways, and you will end up with the first matching element:
 
     document.body.children.form.login_form.children.username
     document.getElementById("username")
+    document.querySelector("[name=username]")
 
+You will then be able to use it directly, like this:  
+
+    document.getElementById("username").value = "my_so_clever";
 
 ----
     
-#### HTML4: much easier!
+#### Getting multiple elements
 
-Now there are many ways to select an element in the browser:
+Use one of these techniques to select a list of elements - you will get ALL matching elements, as an Array:
 
-    document.getElementsByTagName()
-    document.getElementsByClassName()
-   
-But most importantly, you can now select stuff in Javascript using CSS Selectors:
-
-    document.querySelectorAll(".selected")
-    document.querySelector("div.about_me > div.selected")
-    document.querySelector("[name=username]")
-    
----
-#### HTML5: also makes things much better, in other ways.
+    document.querySelectorAll("input")
+    document.getElementsByTagName("button")
+    document.getElementsByClassName(".selected")
 
 ---
 
-#### jQuery makes things even easier
+#### We will soon learn about jQuery
 
-But its more than just "queries", because with querySelector, you can very easily select things using CSS queries. JQuery opens up a whole world of useful functions, loops, and animations.
+It does more than just "queries". With querySelector, you can very easily select things using CSS queries, and you should use that if possible. But, jQuery will not only give you the element, but will inject many useful functions and variables into it, for your convenience.
 
-But first, this is how you would select something using jQuery:
+This is how you would select something using jQuery:
 
     $(".selected")
     $("div.about_me > .selected")
     $("[name=username]")
-    
-As you can see, there is no advantage to jQuery if all you need to do is access the DOM easily. You can already do that with HTML5
+
 
 
 
