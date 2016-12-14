@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scope/DOM/Event Mini Challenges</title>
+</head>
+<body>
+	<button onClick="show_button_1()">Button One</button>
+		<div id="button_1" style="display: none;">I'm Right!</div>
+	<button onClick="show_button_2()">Button Two</button>
+		<div id="button_2" style="display: none;">No, I'm Right!</div>
+	<p onmouseover="hover_alert()" style="font-size: 72px;">DON'T HOVER OVER ME!</p>
+	<h1 id="keyed_header"></h1>
+
+	<form>
+		<input type="text" name="first_name" placeholder="Email/Username">
+		<input id="password" type="text" name="last_name" placeholder="Password">
+		<button id="pw_check">Submit</button>
+
+	</form>
+
+	<script type="text/javascript" src="script.js" ></script>
+</body>
+</html>
