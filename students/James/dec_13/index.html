@@ -1,0 +1,25 @@
+<!DOCTYPEHTML>
+<html>
+	<head>
+		<link rel="stylesheet" href="scope.css" />
+	</head>
+	<body>
+	<button onClick="show_text1(), hide_text2()">Button 1</button>
+	<p id="button1_text" style="display:none;">I'm right</p>
+	<button onClick="show_text2(), hide_text1()">Button 2</button>
+	<p id="button2_text" style="display:none;">No I'm right</p>
+
+	<h1 id="donthover" onMouseOver="hover1()"> Don't hover over me</h1>
+
+	<h1 id="keypresses"></h1>
+
+	<form>
+		<input type="text" placeholder="Email" name="email" id="email_1"/>
+		<input type="text" placeholder="Username" name="username" />
+		<input type="password" placeholder="Password" name="password_1" />
+		<button type="button" onClick="dosubmit()">Submit</button>
+	</form>
+
+		<script type="text/javascript" src="scope.js"></script>
+	</body>
+</html>
