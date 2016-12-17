@@ -1,0 +1,16 @@
+.album {
+}
+.album .album_title {
+}
+.album .album_photos {
+}
+.album .album_photo {
+	padding:10px;
+	display:none;
+}
+.album .album_photo.selected {
+	display:inline-block;
+}
+.album .album_photo img {
+	height:100px;
+}
